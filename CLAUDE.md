@@ -34,12 +34,14 @@ app/
   globals.css               # CSS variables + Tailwind v4 base
   api/redesign/route.ts     # server route — Gemini call, holds API key
 components/
+  ui/                       # shadcn primitives (Button, Textarea, Select, Toast, etc.)
   Hero, Uploader, StylePicker, RoomTypeSelect, DetailsInput
   GenerateButton, LoadingState, BeforeAfter, ResultActions, ExampleGallery
 lib/
   styles.ts   # style preset definitions (id, name, prompt fragment, thumb)
   prompt.ts   # buildPrompt(style, roomType, details?)
   image.ts    # client-side resize/compress + base64 helpers
+components.json             # shadcn config (path aliases, CSS vars, style)
 public/
   examples/   # curated before/after demo pairs
   thumbs/     # style card thumbnails
@@ -74,3 +76,4 @@ GEMINI_IMAGE_MODEL=gemini-2.5-flash-image   # swap to gemini-3-pro-image for hig
 
 - `@google/genai` — Gemini SDK for image generation
 - `motion` — animation (framer-motion v12+)
+- `shadcn/ui` — UI primitives; components live in `components/ui/`, config in `components.json`
