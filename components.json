@@ -21,7 +21,5 @@
   },
   "menuColor": "default",
   "menuAccent": "subtle",
-  "registries": {
-    "@acme": "https://registry.acme.com/{name}.json"
-  }
+  "registries": {}
 }
