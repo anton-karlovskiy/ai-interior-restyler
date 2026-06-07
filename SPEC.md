@@ -48,6 +48,7 @@ The demo succeeds if:
 
 - **Next.js** (App Router) + **TypeScript**.
 - **Tailwind CSS** for styling.
+- **shadcn/ui** for UI components (buttons, dialogs, toasts, etc.) — customized to match the warm editorial design system.
 - **Motion** (`motion` / framer-motion) for animation.
 - **Google Gen AI SDK**: `@google/genai`.
 - No DB, no ORM, no state library beyond React state.
@@ -184,6 +185,7 @@ app/
   api/redesign/route.ts // server: Gemini call
   globals.css           // CSS variables, base styles
 components/
+  ui/                   // shadcn primitives (Button, Textarea, Select, Toast, etc.)
   Hero.tsx
   Uploader.tsx          // drag-drop + preview + client-side resize
   StylePicker.tsx       // visual style cards
@@ -198,6 +200,7 @@ lib/
   styles.ts             // style preset definitions (id, name, prompt fragment, thumb)
   prompt.ts             // buildPrompt(style, roomType)
   image.ts              // client-side resize/compress + base64 helpers
+components.json         // shadcn config (path aliases, CSS vars, style)
 public/
   examples/             // curated before/after demo images
   thumbs/               // style card thumbnails
@@ -253,6 +256,7 @@ Setup:
 npx create-next-app@latest interior-restyler --ts --tailwind --app
 cd interior-restyler
 npm install @google/genai motion
+npx shadcn@latest init          # pick the warm neutral theme; edit components.json to match design tokens
 # add fonts (Fraunces + Hanken Grotesk/Geist) via next/font
 npm run dev
 ```
