@@ -1,5 +1,7 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
+
 interface Props {
   disabled: boolean;
   onClick: () => void;
@@ -7,12 +9,12 @@ interface Props {
 
 export default function GenerateButton({ disabled, onClick }: Props) {
   return (
-    <button
+    <Button
       onClick={onClick}
       disabled={disabled}
-      className="w-full bg-accent text-bg font-body font-medium py-4 rounded-xl text-sm tracking-wide hover:bg-accent-light disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-200 active:scale-[0.99]"
+      className="w-full h-auto py-4 rounded-xl text-sm tracking-wide font-body font-medium active:scale-[0.99]"
     >
       Restyle this room
-    </button>
+    </Button>
   );
 }

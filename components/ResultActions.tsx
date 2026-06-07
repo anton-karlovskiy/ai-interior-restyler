@@ -1,5 +1,7 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
+
 interface Props {
   resultUrl: string;
   onRegenerate: () => void;
@@ -18,24 +20,26 @@ export default function ResultActions({ resultUrl, onRegenerate, onReset }: Prop
 
   return (
     <div className="flex items-center gap-2.5 pt-4">
-      <button
+      <Button
         onClick={handleDownload}
-        className="flex-1 bg-text text-bg font-body text-sm font-medium py-3.5 rounded-xl hover:opacity-90 transition-opacity"
+        className="flex-1 h-auto py-3.5 rounded-xl font-body text-sm font-medium bg-text text-bg hover:bg-text hover:opacity-90"
       >
         Download
-      </button>
-      <button
+      </Button>
+      <Button
+        variant="outline"
         onClick={onRegenerate}
-        className="flex-1 border border-border font-body text-sm py-3.5 rounded-xl text-muted hover:bg-surface hover:text-text transition-all"
+        className="flex-1 h-auto py-3.5 rounded-xl font-body text-sm text-muted hover:bg-surface hover:text-text hover:border-border"
       >
         Regenerate
-      </button>
-      <button
+      </Button>
+      <Button
+        variant="outline"
         onClick={onReset}
-        className="flex-1 border border-border font-body text-sm py-3.5 rounded-xl text-muted hover:bg-surface hover:text-text transition-all"
+        className="flex-1 h-auto py-3.5 rounded-xl font-body text-sm text-muted hover:bg-surface hover:text-text hover:border-border"
       >
         New photo
-      </button>
+      </Button>
     </div>
   );
 }

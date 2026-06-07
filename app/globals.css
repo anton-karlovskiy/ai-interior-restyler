@@ -1,8 +1,10 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 @source not "../.agents";
 @source not "../.claude";
 
 :root {
+  /* Project design tokens */
   --bg: #f4efe7;
   --text: #211c16;
   --accent: #b5562e;
@@ -11,9 +13,31 @@
   --border: #ddd5c8;
   --surface: #faf7f3;
   --surface-2: #f0ece4;
+
+  /* shadcn semantic tokens — mapped to warm editorial palette */
+  --background: #f4efe7;
+  --foreground: #211c16;
+  --card: #faf7f3;
+  --card-foreground: #211c16;
+  --popover: #faf7f3;
+  --popover-foreground: #211c16;
+  --primary: #b5562e;
+  --primary-foreground: #f4efe7;
+  --secondary: #f0ece4;
+  --secondary-foreground: #211c16;
+  --muted-shadcn: #f0ece4;
+  --muted-foreground: #7a6e65;
+  --accent-shadcn: #f0ece4;
+  --accent-foreground: #211c16;
+  --destructive: #c0392b;
+  --destructive-foreground: #f4efe7;
+  --input: #ddd5c8;
+  --ring: #b5562e;
+  --radius: 0.75rem;
 }
 
 @theme inline {
+  /* Project tokens */
   --color-bg: var(--bg);
   --color-text: var(--text);
   --color-accent: var(--accent);
@@ -24,6 +48,29 @@
   --color-surface-2: var(--surface-2);
   --font-display: var(--font-fraunces);
   --font-body: var(--font-hanken);
+
+  /* shadcn token mappings */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  /* --color-muted intentionally kept as #7a6e65 (project muted text/border token) */
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
 }
 
 body {
