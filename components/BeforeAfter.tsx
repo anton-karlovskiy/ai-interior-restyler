@@ -60,11 +60,11 @@ export default function BeforeAfter({ beforeUrl, afterUrl }: Props) {
       onPointerUp={onPointerUp}
       onPointerLeave={onPointerUp}
     >
-      {/* After image — base layer */}
+      {/* After image - base layer */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={afterUrl} alt="After restyling" className="w-full block" draggable={false} />
 
-      {/* Before image — clipped to left portion */}
+      {/* Before image - clipped to left portion */}
       <div
         className="absolute inset-0 overflow-hidden"
         style={{
