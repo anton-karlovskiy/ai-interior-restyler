@@ -14,7 +14,7 @@ export default function Hero() {
           <span className="text-accent italic">reimagined.</span>
         </h1>
         <p className="font-body text-muted text-base md:text-lg leading-relaxed max-w-sm">
-          Upload a room photo, pick a style, and watch it transform — same walls, new world.
+          Upload a room photo, pick a style, and watch it transform - same walls, new world.
         </p>
       </div>
     </header>

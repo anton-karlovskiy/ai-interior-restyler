@@ -15,9 +15,9 @@ const hanken = Hanken_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "AI Interior Restyler — Redesign any room instantly",
+  title: "AI Interior Restyler - Redesign any room instantly",
   description:
-    "Upload a photo of your room and watch it transform into a new interior design style — same walls, new world.",
+    "Upload a photo of your room and watch it transform into a new interior design style - same walls, new world.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

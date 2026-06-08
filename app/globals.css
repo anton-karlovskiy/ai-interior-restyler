@@ -14,7 +14,7 @@
   --surface: #faf7f3;
   --surface-2: #f0ece4;
 
-  /* shadcn semantic tokens — mapped to warm editorial palette */
+  /* shadcn semantic tokens - mapped to warm editorial palette */
   --background: #f4efe7;
   --foreground: #211c16;
   --card: #faf7f3;
@@ -79,7 +79,7 @@ body {
   font-family: var(--font-hanken), sans-serif;
 }
 
-/* Fraunces soft optical variant — gives the display font its warm, organic feel */
+/* Fraunces soft optical variant - gives the display font its warm, organic feel */
 .font-display {
   font-variation-settings:
     "SOFT" 60,
